@@ -443,7 +443,7 @@ function UsedCarInput() {
     console.log(formData);
     try {
       const { data } = await axios.post(
-        "flasktest-production-0624.up.railway.app/predict",
+        "http://localhost:5000/predict",
         {
           ...formData,
         },
